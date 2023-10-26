@@ -21,11 +21,14 @@ protocol HomeSceneBuilder {
 
 final class DefaultHomeSceneBuilder: BaseBuilder, HomeSceneBuilder {
     func create() -> HomeSceneRoutes {
+        /// Home Repository
+        let repository = container.resolve(HomeAppRepositoryProtocol.self)!
+        
         /// Home Scene View Model
-        let viewModel = HomeViewModel()
+        let viewModel = HomeViewModel(repository: repository)
         
         /// Home Scene Main Scene
-        let view = HomeScene()
+        let view = HomeScene(viewModel: viewModel)
         
         /// Home Scene Controller
         let controller = HomeVC(rootView: view, viewModel: viewModel)

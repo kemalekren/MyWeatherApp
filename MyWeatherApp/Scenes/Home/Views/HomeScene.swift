@@ -8,23 +8,30 @@
 import SwiftUI
 
 struct HomeScene: View {
+    @StateObject var viewModel: HomeViewModel
     var body: some View {
         ZStack {
             LinearGradient(colors: [Color("customBlue"), Color("lightblue")], startPoint: .leading, endPoint: .trailing)
                 .ignoresSafeArea()
-            ScrollView {
-                VStack {
-                    HomeHeaderView()
-                        .padding(.top, 16)
+            VStack {
+                ScrollView {
+                    VStack {
+                        HomeHeaderView()
+                            .padding(.top, 16)
+                        
+                        HomeDetailView()
+                        Spacer()
+                    }
                     
-                    HomeDetailView()
-                    Spacer()
                 }
+                Spacer()
+                Text("Updated time: 10.20.2023 23:33")
+                    .foregroundStyle(.white)
             }
         }
     }
 }
 
-#Preview {
-    HomeScene()
-}
+//#Preview {
+//    HomeScene()
+//}
