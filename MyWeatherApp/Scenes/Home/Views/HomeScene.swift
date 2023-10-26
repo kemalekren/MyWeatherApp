@@ -9,7 +9,19 @@ import SwiftUI
 
 struct HomeScene: View {
     var body: some View {
-        Text("Home Scene")
+        ZStack {
+            LinearGradient(colors: [Color("customBlue"), Color("lightblue")], startPoint: .leading, endPoint: .trailing)
+                .ignoresSafeArea()
+            ScrollView {
+                VStack {
+                    HomeHeaderView()
+                        .padding(.top, 16)
+                    
+                    HomeDetailView()
+                    Spacer()
+                }
+            }
+        }
     }
 }
 
