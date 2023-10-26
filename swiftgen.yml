@@ -1,0 +1,16 @@
+ strings:
+   inputs:
+     - MyWeatherApp/Resources/Localization/en.lproj
+   outputs:
+     - templateName: structured-swift5
+       output: MyWeatherApp/Resources/Localization/Localizable.generated.swift
+
+ xcassets:
+   inputs:
+     - MyWeatherApp/Resources/Colors/Colors.xcassets
+     - MyWeatherApp/Resources/Images/Images.xcassets
+   outputs:
+     - templateName: swift5
+       params:
+         forceProvidesNamespaces: true
+       output: MyWeatherApp/Resources/Assets.generated.swift
