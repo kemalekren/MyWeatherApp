@@ -7,12 +7,15 @@
 
 import UIKit
 import SwiftUI
+import Swinject
 
 /// App's main coordinator
 final class AppCoordinator: Coordinator {
     // MARK: - Private Properties
     
     private let window: UIWindow?
+    
+    private let container: Container
     
     private(set) var rootViewController: UINavigationController?
     
@@ -25,8 +28,9 @@ final class AppCoordinator: Coordinator {
     /// - Parameters:
     ///   - window: window: A UIWindow instance.
     ///   - container: App Container instance.
-    init(window: UIWindow?) {
+    init(window: UIWindow?, container: Container) {
         self.window = window
+        self.container = container
         rootViewController = UINavigationController()
         let emptyView = CustomHostingController(view: EmptyView().toolbar(.hidden))
         rootViewController?.setViewControllers([emptyView], animated: false)
@@ -35,7 +39,9 @@ final class AppCoordinator: Coordinator {
     
     /// Start a coordinator
     func start() {
-        
+        childCoordinators.removeAll()
+        let homeCoordinator = HomeCoordinator(appCoordinator: self, container: container)
+        setupChildCoordinator(homeCoordinator)
     }
 }
 
