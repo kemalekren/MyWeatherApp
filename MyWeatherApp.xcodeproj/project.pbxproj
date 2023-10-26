@@ -32,6 +32,16 @@
 		AD451E952AEAA53E003130C9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E942AEAA53E003130C9 /* HomeViewModel.swift */; };
 		AD451E972AEAA5E3003130C9 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E962AEAA5E3003130C9 /* HomeScene.swift */; };
 		AD451E9A2AEAA82F003130C9 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E992AEAA82F003130C9 /* UINavigationController+Extension.swift */; };
+		AD451E9C2AEAAB24003130C9 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E9B2AEAAB24003130C9 /* HomeHeaderView.swift */; };
+		AD451E9E2AEAB11F003130C9 /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E9D2AEAB11F003130C9 /* HomeDetailView.swift */; };
+		AD451EA92AEADE98003130C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD451EAB2AEADE98003130C9 /* Localizable.strings */; };
+		AD451EAE2AEADEA6003130C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD451EAD2AEADEA6003130C9 /* Images.xcassets */; };
+		AD451EB02AEADEAF003130C9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD451EAF2AEADEAF003130C9 /* Colors.xcassets */; };
+		AD451EB42AEADF84003130C9 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EB32AEADF84003130C9 /* Assets.generated.swift */; };
+		AD451EB62AEADFD1003130C9 /* Localizable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EB52AEADFD1003130C9 /* Localizable.generated.swift */; };
+		AD451EB92AEAE06E003130C9 /* ConcurrentNgNetworkModule in Frameworks */ = {isa = PBXBuildFile; productRef = AD451EB82AEAE06E003130C9 /* ConcurrentNgNetworkModule */; };
+		AD451EBB2AEAE06E003130C9 /* NgNetworkModuleCore in Frameworks */ = {isa = PBXBuildFile; productRef = AD451EBA2AEAE06E003130C9 /* NgNetworkModuleCore */; };
+		AD451EBD2AEAE06E003130C9 /* ReactiveNgNetworkModule in Frameworks */ = {isa = PBXBuildFile; productRef = AD451EBC2AEAE06E003130C9 /* ReactiveNgNetworkModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +93,16 @@
 		AD451E942AEAA53E003130C9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		AD451E962AEAA5E3003130C9 /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 		AD451E992AEAA82F003130C9 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		AD451E9B2AEAAB24003130C9 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		AD451E9D2AEAB11F003130C9 /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
+		AD451EA52AEADDE8003130C9 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		AD451EA62AEADDE8003130C9 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AD451EAA2AEADE98003130C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AD451EAC2AEADE99003130C9 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AD451EAD2AEADEA6003130C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD451EAF2AEADEAF003130C9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		AD451EB32AEADF84003130C9 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
+		AD451EB52AEADFD1003130C9 /* Localizable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +111,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD451E7B2AEAA1B6003130C9 /* Swinject in Frameworks */,
+				AD451EBD2AEAE06E003130C9 /* ReactiveNgNetworkModule in Frameworks */,
+				AD451EBB2AEAE06E003130C9 /* NgNetworkModuleCore in Frameworks */,
 				AD451E7D2AEAA1B6003130C9 /* Swinject-Dynamic in Frameworks */,
+				AD451EB92AEAE06E003130C9 /* ConcurrentNgNetworkModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +158,7 @@
 		AD451E252AE9ACB7003130C9 /* MyWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD451E9F2AEADD93003130C9 /* Resources */,
 				AD451E982AEAA81D003130C9 /* Extensions */,
 				AD451E8D2AEAA43A003130C9 /* Helpers */,
 				AD451E852AEAA3CA003130C9 /* Scenes */,
@@ -249,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				AD451E962AEAA5E3003130C9 /* HomeScene.swift */,
+				AD451E9D2AEAB11F003130C9 /* HomeDetailView.swift */,
+				AD451E9B2AEAAB24003130C9 /* HomeHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +311,42 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AD451E9F2AEADD93003130C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD451EB32AEADF84003130C9 /* Assets.generated.swift */,
+				AD451EA22AEADDAF003130C9 /* Localization */,
+				AD451EA12AEADDA9003130C9 /* Images */,
+				AD451EA02AEADDA5003130C9 /* Colors */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD451EA02AEADDA5003130C9 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				AD451EAF2AEADEAF003130C9 /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		AD451EA12AEADDA9003130C9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AD451EAD2AEADEA6003130C9 /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		AD451EA22AEADDAF003130C9 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				AD451EB52AEADFD1003130C9 /* Localizable.generated.swift */,
+				AD451EAB2AEADE98003130C9 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,6 +366,9 @@
 			packageProductDependencies = (
 				AD451E7A2AEAA1B6003130C9 /* Swinject */,
 				AD451E7C2AEAA1B6003130C9 /* Swinject-Dynamic */,
+				AD451EB82AEAE06E003130C9 /* ConcurrentNgNetworkModule */,
+				AD451EBA2AEAE06E003130C9 /* NgNetworkModuleCore */,
+				AD451EBC2AEAE06E003130C9 /* ReactiveNgNetworkModule */,
 			);
 			productName = MyWeatherApp;
 			productReference = AD451E232AE9ACB7003130C9 /* MyWeatherApp.app */;
@@ -375,10 +440,12 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = AD451E1A2AE9ACB7003130C9;
 			packageReferences = (
 				AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */,
+				AD451EB72AEAE06E003130C9 /* XCRemoteSwiftPackageReference "ng-ios-network-module" */,
 			);
 			productRefGroup = AD451E242AE9ACB7003130C9 /* Products */;
 			projectDirPath = "";
@@ -397,6 +464,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD451E332AE9ACB7003130C9 /* LaunchScreen.storyboard in Resources */,
+				AD451EAE2AEADEA6003130C9 /* Images.xcassets in Resources */,
+				AD451EA92AEADE98003130C9 /* Localizable.strings in Resources */,
+				AD451EB02AEADEAF003130C9 /* Colors.xcassets in Resources */,
 				AD451E302AE9ACB7003130C9 /* Assets.xcassets in Resources */,
 				AD451E2E2AE9ACB7003130C9 /* Main.storyboard in Resources */,
 			);
@@ -426,19 +496,23 @@
 				AD451E912AEAA48F003130C9 /* BaseBuilder.swift in Sources */,
 				AD451E972AEAA5E3003130C9 /* HomeScene.swift in Sources */,
 				AD451E932AEAA4DB003130C9 /* HomeVC.swift in Sources */,
+				AD451EB62AEADFD1003130C9 /* Localizable.generated.swift in Sources */,
 				AD451E842AEAA327003130C9 /* CommonContainer.swift in Sources */,
 				AD451E6E2AEA9E91003130C9 /* Coordinator.swift in Sources */,
 				AD451E2B2AE9ACB7003130C9 /* ViewController.swift in Sources */,
 				AD451E802AEAA2AC003130C9 /* AppContainer.swift in Sources */,
 				AD451E8C2AEAA407003130C9 /* HomeVCBuilder.swift in Sources */,
 				AD451E702AEA9EF0003130C9 /* AppCoordinator.swift in Sources */,
+				AD451EB42AEADF84003130C9 /* Assets.generated.swift in Sources */,
 				AD451E732AEA9F98003130C9 /* CustomHostingController.swift in Sources */,
 				AD451E272AE9ACB7003130C9 /* AppDelegate.swift in Sources */,
 				AD451E752AEAA099003130C9 /* HomeCoordinator.swift in Sources */,
+				AD451E9C2AEAAB24003130C9 /* HomeHeaderView.swift in Sources */,
 				AD451E782AEAA11F003130C9 /* ViewControllerRoutes.swift in Sources */,
 				AD451E8F2AEAA443003130C9 /* Typealias.swift in Sources */,
 				AD451E952AEAA53E003130C9 /* HomeViewModel.swift in Sources */,
 				AD451E9A2AEAA82F003130C9 /* UINavigationController+Extension.swift in Sources */,
+				AD451E9E2AEAB11F003130C9 /* HomeDetailView.swift in Sources */,
 				AD451E292AE9ACB7003130C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +554,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD451E2D2AE9ACB7003130C9 /* Base */,
+				AD451EA52AEADDE8003130C9 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -488,8 +563,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD451E322AE9ACB7003130C9 /* Base */,
+				AD451EA62AEADDE8003130C9 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AD451EAB2AEADE98003130C9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD451EAA2AEADE98003130C9 /* en */,
+				AD451EAC2AEADE99003130C9 /* tr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -501,6 +586,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -634,6 +720,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -767,6 +854,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -949,6 +1037,14 @@
 				minimumVersion = 2.8.4;
 			};
 		};
+		AD451EB72AEAE06E003130C9 /* XCRemoteSwiftPackageReference "ng-ios-network-module" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/netguru/ng-ios-network-module.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -961,6 +1057,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = "Swinject-Dynamic";
+		};
+		AD451EB82AEAE06E003130C9 /* ConcurrentNgNetworkModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD451EB72AEAE06E003130C9 /* XCRemoteSwiftPackageReference "ng-ios-network-module" */;
+			productName = ConcurrentNgNetworkModule;
+		};
+		AD451EBA2AEAE06E003130C9 /* NgNetworkModuleCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD451EB72AEAE06E003130C9 /* XCRemoteSwiftPackageReference "ng-ios-network-module" */;
+			productName = NgNetworkModuleCore;
+		};
+		AD451EBC2AEAE06E003130C9 /* ReactiveNgNetworkModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD451EB72AEAE06E003130C9 /* XCRemoteSwiftPackageReference "ng-ios-network-module" */;
+			productName = ReactiveNgNetworkModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

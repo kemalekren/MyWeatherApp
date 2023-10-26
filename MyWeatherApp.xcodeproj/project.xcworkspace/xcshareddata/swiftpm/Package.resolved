@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "ng-ios-network-module",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/netguru/ng-ios-network-module.git",
+      "state" : {
+        "revision" : "ac81a63daecdde6df3efcdf935ac738d32876606",
+        "version" : "1.0.4"
+      }
+    },
+    {
       "identity" : "swinject",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Swinject/Swinject.git",
