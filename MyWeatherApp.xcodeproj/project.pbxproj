@@ -21,6 +21,17 @@
 		AD451E732AEA9F98003130C9 /* CustomHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E722AEA9F98003130C9 /* CustomHostingController.swift */; };
 		AD451E752AEAA099003130C9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E742AEAA099003130C9 /* HomeCoordinator.swift */; };
 		AD451E782AEAA11F003130C9 /* ViewControllerRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E772AEAA11F003130C9 /* ViewControllerRoutes.swift */; };
+		AD451E7B2AEAA1B6003130C9 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = AD451E7A2AEAA1B6003130C9 /* Swinject */; };
+		AD451E7D2AEAA1B6003130C9 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AD451E7C2AEAA1B6003130C9 /* Swinject-Dynamic */; };
+		AD451E802AEAA2AC003130C9 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E7F2AEAA2AC003130C9 /* AppContainer.swift */; };
+		AD451E842AEAA327003130C9 /* CommonContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E832AEAA327003130C9 /* CommonContainer.swift */; };
+		AD451E8C2AEAA407003130C9 /* HomeVCBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E8B2AEAA407003130C9 /* HomeVCBuilder.swift */; };
+		AD451E8F2AEAA443003130C9 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E8E2AEAA443003130C9 /* Typealias.swift */; };
+		AD451E912AEAA48F003130C9 /* BaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E902AEAA48F003130C9 /* BaseBuilder.swift */; };
+		AD451E932AEAA4DB003130C9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E922AEAA4DB003130C9 /* HomeVC.swift */; };
+		AD451E952AEAA53E003130C9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E942AEAA53E003130C9 /* HomeViewModel.swift */; };
+		AD451E972AEAA5E3003130C9 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E962AEAA5E3003130C9 /* HomeScene.swift */; };
+		AD451E9A2AEAA82F003130C9 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E992AEAA82F003130C9 /* UINavigationController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +74,15 @@
 		AD451E722AEA9F98003130C9 /* CustomHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHostingController.swift; sourceTree = "<group>"; };
 		AD451E742AEAA099003130C9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		AD451E772AEAA11F003130C9 /* ViewControllerRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRoutes.swift; sourceTree = "<group>"; };
+		AD451E7F2AEAA2AC003130C9 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		AD451E832AEAA327003130C9 /* CommonContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonContainer.swift; sourceTree = "<group>"; };
+		AD451E8B2AEAA407003130C9 /* HomeVCBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCBuilder.swift; sourceTree = "<group>"; };
+		AD451E8E2AEAA443003130C9 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		AD451E902AEAA48F003130C9 /* BaseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBuilder.swift; sourceTree = "<group>"; };
+		AD451E922AEAA4DB003130C9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		AD451E942AEAA53E003130C9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AD451E962AEAA5E3003130C9 /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
+		AD451E992AEAA82F003130C9 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD451E7B2AEAA1B6003130C9 /* Swinject in Frameworks */,
+				AD451E7D2AEAA1B6003130C9 /* Swinject-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +135,10 @@
 		AD451E252AE9ACB7003130C9 /* MyWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD451E982AEAA81D003130C9 /* Extensions */,
+				AD451E8D2AEAA43A003130C9 /* Helpers */,
+				AD451E852AEAA3CA003130C9 /* Scenes */,
+				AD451E7E2AEAA2A1003130C9 /* Containers */,
 				AD451E762AEAA114003130C9 /* Base */,
 				AD451E712AEA9F79003130C9 /* Common */,
 				AD451E6C2AEA9D64003130C9 /* Coordinator */,
@@ -178,8 +204,85 @@
 			isa = PBXGroup;
 			children = (
 				AD451E772AEAA11F003130C9 /* ViewControllerRoutes.swift */,
+				AD451E902AEAA48F003130C9 /* BaseBuilder.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		AD451E7E2AEAA2A1003130C9 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E7F2AEAA2AC003130C9 /* AppContainer.swift */,
+				AD451E832AEAA327003130C9 /* CommonContainer.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		AD451E852AEAA3CA003130C9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E862AEAA3D6003130C9 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AD451E862AEAA3D6003130C9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E8A2AEAA3EE003130C9 /* Controller */,
+				AD451E892AEAA3E8003130C9 /* Builder */,
+				AD451E882AEAA3E5003130C9 /* Views */,
+				AD451E872AEAA3DC003130C9 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AD451E872AEAA3DC003130C9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E942AEAA53E003130C9 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD451E882AEAA3E5003130C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E962AEAA5E3003130C9 /* HomeScene.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD451E892AEAA3E8003130C9 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E8B2AEAA407003130C9 /* HomeVCBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		AD451E8A2AEAA3EE003130C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E922AEAA4DB003130C9 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD451E8D2AEAA43A003130C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E8E2AEAA443003130C9 /* Typealias.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AD451E982AEAA81D003130C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E992AEAA82F003130C9 /* UINavigationController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +301,10 @@
 			dependencies = (
 			);
 			name = MyWeatherApp;
+			packageProductDependencies = (
+				AD451E7A2AEAA1B6003130C9 /* Swinject */,
+				AD451E7C2AEAA1B6003130C9 /* Swinject-Dynamic */,
+			);
 			productName = MyWeatherApp;
 			productReference = AD451E232AE9ACB7003130C9 /* MyWeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +377,9 @@
 				Base,
 			);
 			mainGroup = AD451E1A2AE9ACB7003130C9;
+			packageReferences = (
+				AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = AD451E242AE9ACB7003130C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -313,13 +423,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD451E912AEAA48F003130C9 /* BaseBuilder.swift in Sources */,
+				AD451E972AEAA5E3003130C9 /* HomeScene.swift in Sources */,
+				AD451E932AEAA4DB003130C9 /* HomeVC.swift in Sources */,
+				AD451E842AEAA327003130C9 /* CommonContainer.swift in Sources */,
 				AD451E6E2AEA9E91003130C9 /* Coordinator.swift in Sources */,
 				AD451E2B2AE9ACB7003130C9 /* ViewController.swift in Sources */,
+				AD451E802AEAA2AC003130C9 /* AppContainer.swift in Sources */,
+				AD451E8C2AEAA407003130C9 /* HomeVCBuilder.swift in Sources */,
 				AD451E702AEA9EF0003130C9 /* AppCoordinator.swift in Sources */,
 				AD451E732AEA9F98003130C9 /* CustomHostingController.swift in Sources */,
 				AD451E272AE9ACB7003130C9 /* AppDelegate.swift in Sources */,
 				AD451E752AEAA099003130C9 /* HomeCoordinator.swift in Sources */,
 				AD451E782AEAA11F003130C9 /* ViewControllerRoutes.swift in Sources */,
+				AD451E8F2AEAA443003130C9 /* Typealias.swift in Sources */,
+				AD451E952AEAA53E003130C9 /* HomeViewModel.swift in Sources */,
+				AD451E9A2AEAA82F003130C9 /* UINavigationController+Extension.swift in Sources */,
 				AD451E292AE9ACB7003130C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -820,6 +939,30 @@
 			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD451E7A2AEAA1B6003130C9 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		AD451E7C2AEAA1B6003130C9 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD451E1B2AE9ACB7003130C9 /* Project object */;
 }
