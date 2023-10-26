@@ -14,5 +14,6 @@ protocol ContainerBuilder {
 enum AppContainer {
     static func build(in container: Container) {
         CommonContainer.build(in: container)
+        IntegrationContainer.build(in: container)
     }
 }
