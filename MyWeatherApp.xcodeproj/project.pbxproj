@@ -42,6 +42,19 @@
 		AD451EB92AEAE06E003130C9 /* ConcurrentNgNetworkModule in Frameworks */ = {isa = PBXBuildFile; productRef = AD451EB82AEAE06E003130C9 /* ConcurrentNgNetworkModule */; };
 		AD451EBB2AEAE06E003130C9 /* NgNetworkModuleCore in Frameworks */ = {isa = PBXBuildFile; productRef = AD451EBA2AEAE06E003130C9 /* NgNetworkModuleCore */; };
 		AD451EBD2AEAE06E003130C9 /* ReactiveNgNetworkModule in Frameworks */ = {isa = PBXBuildFile; productRef = AD451EBC2AEAE06E003130C9 /* ReactiveNgNetworkModule */; };
+		AD451EC22AEAE3EC003130C9 /* RequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EC12AEAE3EC003130C9 /* RequestPerformer.swift */; };
+		AD451EC42AEAE9B2003130C9 /* NetworkURLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EC32AEAE9B2003130C9 /* NetworkURLManager.swift */; };
+		AD451EC62AEAE9FE003130C9 /* AppScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EC52AEAE9FE003130C9 /* AppScheme.swift */; };
+		AD451EC82AEAEFF8003130C9 /* IntegrationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EC72AEAEFF7003130C9 /* IntegrationContainer.swift */; };
+		AD451ECC2AEAF100003130C9 /* HomeAppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451ECB2AEAF100003130C9 /* HomeAppRepository.swift */; };
+		AD451ECE2AEAF17E003130C9 /* DefaultHomeOnlineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451ECD2AEAF17E003130C9 /* DefaultHomeOnlineRepository.swift */; };
+		AD451ED02AEAF1BC003130C9 /* BaseOnlineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451ECF2AEAF1BC003130C9 /* BaseOnlineRepository.swift */; };
+		AD451ED42AEAF224003130C9 /* HomeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451ED32AEAF224003130C9 /* HomeRequest.swift */; };
+		AD451ED72AEAF2B8003130C9 /* HomeRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451ED62AEAF2B8003130C9 /* HomeRequestModel.swift */; };
+		AD451ED92AEAF35F003130C9 /* HomeResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451ED82AEAF35F003130C9 /* HomeResultModel.swift */; };
+		AD451EDB2AEAF7A4003130C9 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EDA2AEAF7A4003130C9 /* Codable+Extension.swift */; };
+		AD451EDD2AEAF979003130C9 /* HomeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EDC2AEAF979003130C9 /* HomeViewState.swift */; };
+		AD451EE02AEB0F44003130C9 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EDF2AEB0F44003130C9 /* TokenManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +116,19 @@
 		AD451EAF2AEADEAF003130C9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		AD451EB32AEADF84003130C9 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
 		AD451EB52AEADFD1003130C9 /* Localizable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.generated.swift; sourceTree = "<group>"; };
+		AD451EC12AEAE3EC003130C9 /* RequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPerformer.swift; sourceTree = "<group>"; };
+		AD451EC32AEAE9B2003130C9 /* NetworkURLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkURLManager.swift; sourceTree = "<group>"; };
+		AD451EC52AEAE9FE003130C9 /* AppScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScheme.swift; sourceTree = "<group>"; };
+		AD451EC72AEAEFF7003130C9 /* IntegrationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationContainer.swift; sourceTree = "<group>"; };
+		AD451ECB2AEAF100003130C9 /* HomeAppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppRepository.swift; sourceTree = "<group>"; };
+		AD451ECD2AEAF17E003130C9 /* DefaultHomeOnlineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeOnlineRepository.swift; sourceTree = "<group>"; };
+		AD451ECF2AEAF1BC003130C9 /* BaseOnlineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOnlineRepository.swift; sourceTree = "<group>"; };
+		AD451ED32AEAF224003130C9 /* HomeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequest.swift; sourceTree = "<group>"; };
+		AD451ED62AEAF2B8003130C9 /* HomeRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequestModel.swift; sourceTree = "<group>"; };
+		AD451ED82AEAF35F003130C9 /* HomeResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResultModel.swift; sourceTree = "<group>"; };
+		AD451EDA2AEAF7A4003130C9 /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
+		AD451EDC2AEAF979003130C9 /* HomeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewState.swift; sourceTree = "<group>"; };
+		AD451EDF2AEB0F44003130C9 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +184,8 @@
 		AD451E252AE9ACB7003130C9 /* MyWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD451EC92AEAF0E6003130C9 /* Repositories */,
+				AD451EBE2AEAE2D1003130C9 /* Service */,
 				AD451E9F2AEADD93003130C9 /* Resources */,
 				AD451E982AEAA81D003130C9 /* Extensions */,
 				AD451E8D2AEAA43A003130C9 /* Helpers */,
@@ -174,6 +202,7 @@
 				AD451E2F2AE9ACB7003130C9 /* Assets.xcassets */,
 				AD451E312AE9ACB7003130C9 /* LaunchScreen.storyboard */,
 				AD451E342AE9ACB7003130C9 /* Info.plist */,
+				AD451EC52AEAE9FE003130C9 /* AppScheme.swift */,
 			);
 			path = MyWeatherApp;
 			sourceTree = "<group>";
@@ -238,6 +267,7 @@
 			children = (
 				AD451E7F2AEAA2AC003130C9 /* AppContainer.swift */,
 				AD451E832AEAA327003130C9 /* CommonContainer.swift */,
+				AD451EC72AEAEFF7003130C9 /* IntegrationContainer.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -265,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				AD451E942AEAA53E003130C9 /* HomeViewModel.swift */,
+				AD451EDC2AEAF979003130C9 /* HomeViewState.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -307,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				AD451E992AEAA82F003130C9 /* UINavigationController+Extension.swift */,
+				AD451EDA2AEAF7A4003130C9 /* Codable+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,6 +377,61 @@
 				AD451EAB2AEADE98003130C9 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		AD451EBE2AEAE2D1003130C9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AD451ED52AEAF2AA003130C9 /* Models */,
+				AD451ED22AEAF218003130C9 /* Base */,
+				AD451ED12AEAF214003130C9 /* Requests */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AD451EC92AEAF0E6003130C9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AD451ECA2AEAF0F6003130C9 /* Home */,
+				AD451ECF2AEAF1BC003130C9 /* BaseOnlineRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AD451ECA2AEAF0F6003130C9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD451ECB2AEAF100003130C9 /* HomeAppRepository.swift */,
+				AD451ECD2AEAF17E003130C9 /* DefaultHomeOnlineRepository.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AD451ED12AEAF214003130C9 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				AD451ED32AEAF224003130C9 /* HomeRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		AD451ED22AEAF218003130C9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD451EC12AEAE3EC003130C9 /* RequestPerformer.swift */,
+				AD451EC32AEAE9B2003130C9 /* NetworkURLManager.swift */,
+				AD451EDF2AEB0F44003130C9 /* TokenManager.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AD451ED52AEAF2AA003130C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD451ED62AEAF2B8003130C9 /* HomeRequestModel.swift */,
+				AD451ED82AEAF35F003130C9 /* HomeResultModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,26 +580,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD451EC42AEAE9B2003130C9 /* NetworkURLManager.swift in Sources */,
 				AD451E912AEAA48F003130C9 /* BaseBuilder.swift in Sources */,
 				AD451E972AEAA5E3003130C9 /* HomeScene.swift in Sources */,
 				AD451E932AEAA4DB003130C9 /* HomeVC.swift in Sources */,
+				AD451EDB2AEAF7A4003130C9 /* Codable+Extension.swift in Sources */,
 				AD451EB62AEADFD1003130C9 /* Localizable.generated.swift in Sources */,
 				AD451E842AEAA327003130C9 /* CommonContainer.swift in Sources */,
+				AD451EC22AEAE3EC003130C9 /* RequestPerformer.swift in Sources */,
 				AD451E6E2AEA9E91003130C9 /* Coordinator.swift in Sources */,
+				AD451EC62AEAE9FE003130C9 /* AppScheme.swift in Sources */,
 				AD451E2B2AE9ACB7003130C9 /* ViewController.swift in Sources */,
+				AD451ED72AEAF2B8003130C9 /* HomeRequestModel.swift in Sources */,
 				AD451E802AEAA2AC003130C9 /* AppContainer.swift in Sources */,
 				AD451E8C2AEAA407003130C9 /* HomeVCBuilder.swift in Sources */,
 				AD451E702AEA9EF0003130C9 /* AppCoordinator.swift in Sources */,
 				AD451EB42AEADF84003130C9 /* Assets.generated.swift in Sources */,
+				AD451EC82AEAEFF8003130C9 /* IntegrationContainer.swift in Sources */,
+				AD451EE02AEB0F44003130C9 /* TokenManager.swift in Sources */,
 				AD451E732AEA9F98003130C9 /* CustomHostingController.swift in Sources */,
 				AD451E272AE9ACB7003130C9 /* AppDelegate.swift in Sources */,
+				AD451ED92AEAF35F003130C9 /* HomeResultModel.swift in Sources */,
+				AD451ED02AEAF1BC003130C9 /* BaseOnlineRepository.swift in Sources */,
+				AD451ED42AEAF224003130C9 /* HomeRequest.swift in Sources */,
 				AD451E752AEAA099003130C9 /* HomeCoordinator.swift in Sources */,
 				AD451E9C2AEAAB24003130C9 /* HomeHeaderView.swift in Sources */,
 				AD451E782AEAA11F003130C9 /* ViewControllerRoutes.swift in Sources */,
 				AD451E8F2AEAA443003130C9 /* Typealias.swift in Sources */,
+				AD451ECE2AEAF17E003130C9 /* DefaultHomeOnlineRepository.swift in Sources */,
+				AD451EDD2AEAF979003130C9 /* HomeViewState.swift in Sources */,
 				AD451E952AEAA53E003130C9 /* HomeViewModel.swift in Sources */,
 				AD451E9A2AEAA82F003130C9 /* UINavigationController+Extension.swift in Sources */,
 				AD451E9E2AEAB11F003130C9 /* HomeDetailView.swift in Sources */,
+				AD451ECC2AEAF100003130C9 /* HomeAppRepository.swift in Sources */,
 				AD451E292AE9ACB7003130C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,6 +770,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(ENV_DEFAULT) $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -804,6 +905,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(ENV_DEFAULT) $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -939,6 +1041,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(ENV_DEFAULT) $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
