@@ -1,0 +1,6 @@
+#include "Base.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.kemalekren.MyWeatherApp
+ENV_DEFAULT = ENV_DEVELOPMENT
+CODE_SIGN_IDENTITY = Apple Development
+PROVISIONING_PROFILE_SPECIFIER = Weather-Development

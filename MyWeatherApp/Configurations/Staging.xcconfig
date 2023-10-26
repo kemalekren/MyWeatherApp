@@ -1,0 +1,7 @@
+#include "Base.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.kemalekren.myWeatherApp.staging
+ENV_DEFAULT = ENV_STAGING
+CODE_SIGN_IDENTITY = iPhone Distribution
+PROVISIONING_PROFILE_SPECIFIER =  Weather-Staging
+

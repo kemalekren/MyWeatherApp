@@ -1,0 +1,6 @@
+#include "Base.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.kemalekren.myWeatherApp.production
+ENV_DEFAULT = ENV_PRODUCTION
+CODE_SIGN_IDENTITY = iPhone Distribution
+PROVISIONING_PROFILE_SPECIFIER = Weather-Production
