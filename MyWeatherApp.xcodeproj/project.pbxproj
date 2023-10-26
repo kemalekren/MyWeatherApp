@@ -16,6 +16,11 @@
 		AD451E3E2AE9ACB8003130C9 /* MyWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E3D2AE9ACB8003130C9 /* MyWeatherAppTests.swift */; };
 		AD451E482AE9ACB8003130C9 /* MyWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E472AE9ACB8003130C9 /* MyWeatherAppUITests.swift */; };
 		AD451E4A2AE9ACB8003130C9 /* MyWeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E492AE9ACB8003130C9 /* MyWeatherAppUITestsLaunchTests.swift */; };
+		AD451E6E2AEA9E91003130C9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E6D2AEA9E91003130C9 /* Coordinator.swift */; };
+		AD451E702AEA9EF0003130C9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E6F2AEA9EF0003130C9 /* AppCoordinator.swift */; };
+		AD451E732AEA9F98003130C9 /* CustomHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E722AEA9F98003130C9 /* CustomHostingController.swift */; };
+		AD451E752AEAA099003130C9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E742AEAA099003130C9 /* HomeCoordinator.swift */; };
+		AD451E782AEAA11F003130C9 /* ViewControllerRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E772AEAA11F003130C9 /* ViewControllerRoutes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		AD451E642AE9CC4D003130C9 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		AD451E652AE9CC54003130C9 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		AD451E662AE9CC8C003130C9 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		AD451E6D2AEA9E91003130C9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AD451E6F2AEA9EF0003130C9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AD451E722AEA9F98003130C9 /* CustomHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHostingController.swift; sourceTree = "<group>"; };
+		AD451E742AEAA099003130C9 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		AD451E772AEAA11F003130C9 /* ViewControllerRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRoutes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,9 @@
 		AD451E252AE9ACB7003130C9 /* MyWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD451E762AEAA114003130C9 /* Base */,
+				AD451E712AEA9F79003130C9 /* Common */,
+				AD451E6C2AEA9D64003130C9 /* Coordinator */,
 				AD451E622AE9CB51003130C9 /* Configurations */,
 				AD451E262AE9ACB7003130C9 /* AppDelegate.swift */,
 				AD451E282AE9ACB7003130C9 /* SceneDelegate.swift */,
@@ -141,6 +154,32 @@
 				AD451E662AE9CC8C003130C9 /* Base.xcconfig */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		AD451E6C2AEA9D64003130C9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E6D2AEA9E91003130C9 /* Coordinator.swift */,
+				AD451E6F2AEA9EF0003130C9 /* AppCoordinator.swift */,
+				AD451E742AEAA099003130C9 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AD451E712AEA9F79003130C9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E722AEA9F98003130C9 /* CustomHostingController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AD451E762AEAA114003130C9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD451E772AEAA11F003130C9 /* ViewControllerRoutes.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD451E6E2AEA9E91003130C9 /* Coordinator.swift in Sources */,
 				AD451E2B2AE9ACB7003130C9 /* ViewController.swift in Sources */,
+				AD451E702AEA9EF0003130C9 /* AppCoordinator.swift in Sources */,
+				AD451E732AEA9F98003130C9 /* CustomHostingController.swift in Sources */,
 				AD451E272AE9ACB7003130C9 /* AppDelegate.swift in Sources */,
+				AD451E752AEAA099003130C9 /* HomeCoordinator.swift in Sources */,
+				AD451E782AEAA11F003130C9 /* ViewControllerRoutes.swift in Sources */,
 				AD451E292AE9ACB7003130C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
