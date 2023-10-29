@@ -6,3 +6,9 @@
   
 */
 
+"HomeScreen.Error.Button.Title" = "Refresh";
+"HomeScreen.Error.Button.Title.Close" = "Close";
+"HomeScreen.Settings.Fahrenheit.title" = "Fahrenheit";
+"HomeScreen.Settings.Celsius.title" = "Celsius";
+"SearchScreen.Button.Select.title" = "Select";
+"SearchScreen.NavigationBar.title" = "Search";

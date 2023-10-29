@@ -10,6 +10,43 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum HomeScreen {
+    internal enum Error {
+      internal enum Button {
+        /// Localizable.strings
+        ///   MyWeatherApp
+        /// 
+        ///   Created by Esat Kemal Ekren on 26/10/2023.
+        internal static let title = L10n.tr("Localizable", "HomeScreen.Error.Button.Title", fallback: "Refresh")
+        internal enum Title {
+          /// Close
+          internal static let close = L10n.tr("Localizable", "HomeScreen.Error.Button.Title.Close", fallback: "Close")
+        }
+      }
+    }
+    internal enum Settings {
+      internal enum Celsius {
+        /// Celsius
+        internal static let title = L10n.tr("Localizable", "HomeScreen.Settings.Celsius.title", fallback: "Celsius")
+      }
+      internal enum Fahrenheit {
+        /// Fahrenheit
+        internal static let title = L10n.tr("Localizable", "HomeScreen.Settings.Fahrenheit.title", fallback: "Fahrenheit")
+      }
+    }
+  }
+  internal enum SearchScreen {
+    internal enum Button {
+      internal enum Select {
+        /// Select
+        internal static let title = L10n.tr("Localizable", "SearchScreen.Button.Select.title", fallback: "Select")
+      }
+    }
+    internal enum NavigationBar {
+      /// Search
+      internal static let title = L10n.tr("Localizable", "SearchScreen.NavigationBar.title", fallback: "Search")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

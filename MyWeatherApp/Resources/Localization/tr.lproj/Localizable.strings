@@ -5,3 +5,7 @@
   Created by Esat Kemal Ekren on 26/10/2023.
   
 */
+
+"HomeScreen.Error.Button.Title" = "Refresh";
+"HomeScreen.Error.Button.Title.Close" = "Close";
+
