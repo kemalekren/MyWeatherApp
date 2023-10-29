@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0B76992AEC0B3500B9412D /* HomeWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B76982AEC0B3500B9412D /* HomeWeatherModel.swift */; };
+		AD0B769C2AEC313A00B9412D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AD0B769B2AEC313A00B9412D /* Kingfisher */; };
+		AD0B769F2AEC31E800B9412D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B769E2AEC31E800B9412D /* LocationManager.swift */; };
+		AD21A2672AEE5FD700420125 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2662AEE5FD700420125 /* LoadingView.swift */; };
+		AD21A26E2AEE90A500420125 /* SearchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A26D2AEE90A500420125 /* SearchScene.swift */; };
+		AD21A2702AEE90B200420125 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A26F2AEE90B200420125 /* SearchViewModel.swift */; };
+		AD21A2722AEE90B900420125 /* SearchVCBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2712AEE90B900420125 /* SearchVCBuilder.swift */; };
+		AD21A2742AEE90C000420125 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2732AEE90C000420125 /* SearchVC.swift */; };
+		AD21A2782AEE974E00420125 /* SearchEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2772AEE974E00420125 /* SearchEmptyView.swift */; };
+		AD21A27B2AEE989000420125 /* SearchAppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A27A2AEE989000420125 /* SearchAppRepository.swift */; };
+		AD21A27D2AEE989D00420125 /* DefaultSearchOnlineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A27C2AEE989D00420125 /* DefaultSearchOnlineRepository.swift */; };
+		AD21A2812AEE98F000420125 /* SearchRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2802AEE98F000420125 /* SearchRequestModel.swift */; };
+		AD21A2832AEE995800420125 /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2822AEE995800420125 /* SearchRequest.swift */; };
+		AD21A2852AEE999700420125 /* SearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2842AEE999700420125 /* SearchResultModel.swift */; };
+		AD21A2872AEE9B8500420125 /* SearchViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2862AEE9B8500420125 /* SearchViewState.swift */; };
+		AD21A28A2AEE9BA400420125 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2892AEE9BA400420125 /* SearchModel.swift */; };
+		AD21A28C2AEED71E00420125 /* DebounceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A28B2AEED71E00420125 /* DebounceManager.swift */; };
+		AD21A2902AEEDCE700420125 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A28F2AEEDCE700420125 /* UserManager.swift */; };
+		AD21A2942AEEDEB400420125 /* Optional+Extentsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2932AEEDEB400420125 /* Optional+Extentsions.swift */; };
+		AD21A2962AEEE05B00420125 /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2952AEEE05B00420125 /* Publisher+Extensions.swift */; };
+		AD21A2982AEEE62C00420125 /* Double+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2972AEEE62C00420125 /* Double+Extenstion.swift */; };
+		AD21A29A2AEEE6E000420125 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2992AEEE6E000420125 /* Int+Extension.swift */; };
 		AD451E272AE9ACB7003130C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E262AE9ACB7003130C9 /* AppDelegate.swift */; };
 		AD451E292AE9ACB7003130C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E282AE9ACB7003130C9 /* SceneDelegate.swift */; };
 		AD451E2B2AE9ACB7003130C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E2A2AE9ACB7003130C9 /* ViewController.swift */; };
@@ -55,6 +77,8 @@
 		AD451EDB2AEAF7A4003130C9 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EDA2AEAF7A4003130C9 /* Codable+Extension.swift */; };
 		AD451EDD2AEAF979003130C9 /* HomeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EDC2AEAF979003130C9 /* HomeViewState.swift */; };
 		AD451EE02AEB0F44003130C9 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451EDF2AEB0F44003130C9 /* TokenManager.swift */; };
+		ADBDD37F2AEE40C2008C9286 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDD37E2AEE40C2008C9286 /* ErrorView.swift */; };
+		ADBDD3812AEE422E008C9286 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBDD3802AEE422E008C9286 /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +99,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD0B76982AEC0B3500B9412D /* HomeWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeatherModel.swift; sourceTree = "<group>"; };
+		AD0B769E2AEC31E800B9412D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AD21A2662AEE5FD700420125 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AD21A26D2AEE90A500420125 /* SearchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScene.swift; sourceTree = "<group>"; };
+		AD21A26F2AEE90B200420125 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		AD21A2712AEE90B900420125 /* SearchVCBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVCBuilder.swift; sourceTree = "<group>"; };
+		AD21A2732AEE90C000420125 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		AD21A2772AEE974E00420125 /* SearchEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEmptyView.swift; sourceTree = "<group>"; };
+		AD21A27A2AEE989000420125 /* SearchAppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAppRepository.swift; sourceTree = "<group>"; };
+		AD21A27C2AEE989D00420125 /* DefaultSearchOnlineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSearchOnlineRepository.swift; sourceTree = "<group>"; };
+		AD21A2802AEE98F000420125 /* SearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestModel.swift; sourceTree = "<group>"; };
+		AD21A2822AEE995800420125 /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		AD21A2842AEE999700420125 /* SearchResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultModel.swift; sourceTree = "<group>"; };
+		AD21A2862AEE9B8500420125 /* SearchViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewState.swift; sourceTree = "<group>"; };
+		AD21A2892AEE9BA400420125 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		AD21A28B2AEED71E00420125 /* DebounceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceManager.swift; sourceTree = "<group>"; };
+		AD21A28F2AEEDCE700420125 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		AD21A2932AEEDEB400420125 /* Optional+Extentsions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extentsions.swift"; sourceTree = "<group>"; };
+		AD21A2952AEEE05B00420125 /* Publisher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extensions.swift"; sourceTree = "<group>"; };
+		AD21A2972AEEE62C00420125 /* Double+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extenstion.swift"; sourceTree = "<group>"; };
+		AD21A2992AEEE6E000420125 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		AD451E232AE9ACB7003130C9 /* MyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD451E262AE9ACB7003130C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD451E282AE9ACB7003130C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,10 +153,7 @@
 		AD451E992AEAA82F003130C9 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		AD451E9B2AEAAB24003130C9 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		AD451E9D2AEAB11F003130C9 /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
-		AD451EA52AEADDE8003130C9 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
-		AD451EA62AEADDE8003130C9 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		AD451EAA2AEADE98003130C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AD451EAC2AEADE99003130C9 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD451EAD2AEADEA6003130C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AD451EAF2AEADEAF003130C9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		AD451EB32AEADF84003130C9 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
@@ -129,6 +171,8 @@
 		AD451EDA2AEAF7A4003130C9 /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
 		AD451EDC2AEAF979003130C9 /* HomeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewState.swift; sourceTree = "<group>"; };
 		AD451EDF2AEB0F44003130C9 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		ADBDD37E2AEE40C2008C9286 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		ADBDD3802AEE422E008C9286 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0B769C2AEC313A00B9412D /* Kingfisher in Frameworks */,
 				AD451E7B2AEAA1B6003130C9 /* Swinject in Frameworks */,
 				AD451EBD2AEAE06E003130C9 /* ReactiveNgNetworkModule in Frameworks */,
 				AD451EBB2AEAE06E003130C9 /* NgNetworkModuleCore in Frameworks */,
@@ -161,6 +206,105 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0B76962AEC0B1A00B9412D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD0B76982AEC0B3500B9412D /* HomeWeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD0B769D2AEC31DF00B9412D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AD0B769E2AEC31E800B9412D /* LocationManager.swift */,
+				AD21A28B2AEED71E00420125 /* DebounceManager.swift */,
+				AD21A28F2AEEDCE700420125 /* UserManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		AD21A2682AEE908500420125 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AD21A2882AEE9B9B00420125 /* Model */,
+				AD21A26C2AEE909B00420125 /* Views */,
+				AD21A26B2AEE909200420125 /* ViewModel */,
+				AD21A26A2AEE908D00420125 /* Builder */,
+				AD21A2692AEE908A00420125 /* Controller */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AD21A2692AEE908A00420125 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD21A2732AEE90C000420125 /* SearchVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD21A26A2AEE908D00420125 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				AD21A2712AEE90B900420125 /* SearchVCBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		AD21A26B2AEE909200420125 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD21A26F2AEE90B200420125 /* SearchViewModel.swift */,
+				AD21A2862AEE9B8500420125 /* SearchViewState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD21A26C2AEE909B00420125 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD21A26D2AEE90A500420125 /* SearchScene.swift */,
+				AD21A2772AEE974E00420125 /* SearchEmptyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD21A2792AEE988200420125 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AD21A27A2AEE989000420125 /* SearchAppRepository.swift */,
+				AD21A27C2AEE989D00420125 /* DefaultSearchOnlineRepository.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AD21A27E2AEE98E600420125 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD451ED62AEAF2B8003130C9 /* HomeRequestModel.swift */,
+				AD451ED82AEAF35F003130C9 /* HomeResultModel.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		AD21A27F2AEE98E900420125 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AD21A2802AEE98F000420125 /* SearchRequestModel.swift */,
+				AD21A2842AEE999700420125 /* SearchResultModel.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		AD21A2882AEE9B9B00420125 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD21A2892AEE9BA400420125 /* SearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AD451E1A2AE9ACB7003130C9 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +328,7 @@
 		AD451E252AE9ACB7003130C9 /* MyWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD0B769D2AEC31DF00B9412D /* Managers */,
 				AD451EC92AEAF0E6003130C9 /* Repositories */,
 				AD451EBE2AEAE2D1003130C9 /* Service */,
 				AD451E9F2AEADD93003130C9 /* Resources */,
@@ -248,7 +393,9 @@
 		AD451E712AEA9F79003130C9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ADBDD37B2AEE40B7008C9286 /* Views */,
 				AD451E722AEA9F98003130C9 /* CustomHostingController.swift */,
+				AD21A2662AEE5FD700420125 /* LoadingView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -275,6 +422,7 @@
 		AD451E852AEAA3CA003130C9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				AD21A2682AEE908500420125 /* Search */,
 				AD451E862AEAA3D6003130C9 /* Home */,
 			);
 			path = Scenes;
@@ -283,6 +431,7 @@
 		AD451E862AEAA3D6003130C9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AD0B76962AEC0B1A00B9412D /* Model */,
 				AD451E8A2AEAA3EE003130C9 /* Controller */,
 				AD451E892AEAA3E8003130C9 /* Builder */,
 				AD451E882AEAA3E5003130C9 /* Views */,
@@ -339,6 +488,11 @@
 			children = (
 				AD451E992AEAA82F003130C9 /* UINavigationController+Extension.swift */,
 				AD451EDA2AEAF7A4003130C9 /* Codable+Extension.swift */,
+				ADBDD3802AEE422E008C9286 /* View+Extensions.swift */,
+				AD21A2932AEEDEB400420125 /* Optional+Extentsions.swift */,
+				AD21A2952AEEE05B00420125 /* Publisher+Extensions.swift */,
+				AD21A2972AEEE62C00420125 /* Double+Extenstion.swift */,
+				AD21A2992AEEE6E000420125 /* Int+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -392,6 +546,7 @@
 		AD451EC92AEAF0E6003130C9 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AD21A2792AEE988200420125 /* Search */,
 				AD451ECA2AEAF0F6003130C9 /* Home */,
 				AD451ECF2AEAF1BC003130C9 /* BaseOnlineRepository.swift */,
 			);
@@ -411,6 +566,7 @@
 			isa = PBXGroup;
 			children = (
 				AD451ED32AEAF224003130C9 /* HomeRequest.swift */,
+				AD21A2822AEE995800420125 /* SearchRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -428,10 +584,18 @@
 		AD451ED52AEAF2AA003130C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AD451ED62AEAF2B8003130C9 /* HomeRequestModel.swift */,
-				AD451ED82AEAF35F003130C9 /* HomeResultModel.swift */,
+				AD21A27F2AEE98E900420125 /* Search */,
+				AD21A27E2AEE98E600420125 /* Home */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		ADBDD37B2AEE40B7008C9286 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ADBDD37E2AEE40C2008C9286 /* ErrorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,6 +620,7 @@
 				AD451EB82AEAE06E003130C9 /* ConcurrentNgNetworkModule */,
 				AD451EBA2AEAE06E003130C9 /* NgNetworkModuleCore */,
 				AD451EBC2AEAE06E003130C9 /* ReactiveNgNetworkModule */,
+				AD0B769B2AEC313A00B9412D /* Kingfisher */,
 			);
 			productName = MyWeatherApp;
 			productReference = AD451E232AE9ACB7003130C9 /* MyWeatherApp.app */;
@@ -527,12 +692,12 @@
 			knownRegions = (
 				en,
 				Base,
-				tr,
 			);
 			mainGroup = AD451E1A2AE9ACB7003130C9;
 			packageReferences = (
 				AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */,
 				AD451EB72AEAE06E003130C9 /* XCRemoteSwiftPackageReference "ng-ios-network-module" */,
+				AD0B769A2AEC313A00B9412D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = AD451E242AE9ACB7003130C9 /* Products */;
 			projectDirPath = "";
@@ -580,37 +745,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD21A29A2AEEE6E000420125 /* Int+Extension.swift in Sources */,
 				AD451EC42AEAE9B2003130C9 /* NetworkURLManager.swift in Sources */,
 				AD451E912AEAA48F003130C9 /* BaseBuilder.swift in Sources */,
 				AD451E972AEAA5E3003130C9 /* HomeScene.swift in Sources */,
 				AD451E932AEAA4DB003130C9 /* HomeVC.swift in Sources */,
+				AD21A2962AEEE05B00420125 /* Publisher+Extensions.swift in Sources */,
 				AD451EDB2AEAF7A4003130C9 /* Codable+Extension.swift in Sources */,
 				AD451EB62AEADFD1003130C9 /* Localizable.generated.swift in Sources */,
+				AD0B76992AEC0B3500B9412D /* HomeWeatherModel.swift in Sources */,
 				AD451E842AEAA327003130C9 /* CommonContainer.swift in Sources */,
+				AD21A2872AEE9B8500420125 /* SearchViewState.swift in Sources */,
+				AD21A2742AEE90C000420125 /* SearchVC.swift in Sources */,
+				AD21A26E2AEE90A500420125 /* SearchScene.swift in Sources */,
+				AD0B769F2AEC31E800B9412D /* LocationManager.swift in Sources */,
 				AD451EC22AEAE3EC003130C9 /* RequestPerformer.swift in Sources */,
+				AD21A2702AEE90B200420125 /* SearchViewModel.swift in Sources */,
+				AD21A2832AEE995800420125 /* SearchRequest.swift in Sources */,
 				AD451E6E2AEA9E91003130C9 /* Coordinator.swift in Sources */,
+				AD21A2982AEEE62C00420125 /* Double+Extenstion.swift in Sources */,
+				AD21A2672AEE5FD700420125 /* LoadingView.swift in Sources */,
 				AD451EC62AEAE9FE003130C9 /* AppScheme.swift in Sources */,
 				AD451E2B2AE9ACB7003130C9 /* ViewController.swift in Sources */,
 				AD451ED72AEAF2B8003130C9 /* HomeRequestModel.swift in Sources */,
 				AD451E802AEAA2AC003130C9 /* AppContainer.swift in Sources */,
 				AD451E8C2AEAA407003130C9 /* HomeVCBuilder.swift in Sources */,
 				AD451E702AEA9EF0003130C9 /* AppCoordinator.swift in Sources */,
+				AD21A2812AEE98F000420125 /* SearchRequestModel.swift in Sources */,
 				AD451EB42AEADF84003130C9 /* Assets.generated.swift in Sources */,
 				AD451EC82AEAEFF8003130C9 /* IntegrationContainer.swift in Sources */,
 				AD451EE02AEB0F44003130C9 /* TokenManager.swift in Sources */,
+				AD21A28A2AEE9BA400420125 /* SearchModel.swift in Sources */,
 				AD451E732AEA9F98003130C9 /* CustomHostingController.swift in Sources */,
+				AD21A2722AEE90B900420125 /* SearchVCBuilder.swift in Sources */,
+				ADBDD37F2AEE40C2008C9286 /* ErrorView.swift in Sources */,
 				AD451E272AE9ACB7003130C9 /* AppDelegate.swift in Sources */,
 				AD451ED92AEAF35F003130C9 /* HomeResultModel.swift in Sources */,
+				AD21A27B2AEE989000420125 /* SearchAppRepository.swift in Sources */,
 				AD451ED02AEAF1BC003130C9 /* BaseOnlineRepository.swift in Sources */,
 				AD451ED42AEAF224003130C9 /* HomeRequest.swift in Sources */,
 				AD451E752AEAA099003130C9 /* HomeCoordinator.swift in Sources */,
 				AD451E9C2AEAAB24003130C9 /* HomeHeaderView.swift in Sources */,
+				AD21A2942AEEDEB400420125 /* Optional+Extentsions.swift in Sources */,
 				AD451E782AEAA11F003130C9 /* ViewControllerRoutes.swift in Sources */,
 				AD451E8F2AEAA443003130C9 /* Typealias.swift in Sources */,
+				AD21A28C2AEED71E00420125 /* DebounceManager.swift in Sources */,
+				AD21A2852AEE999700420125 /* SearchResultModel.swift in Sources */,
+				ADBDD3812AEE422E008C9286 /* View+Extensions.swift in Sources */,
+				AD21A2782AEE974E00420125 /* SearchEmptyView.swift in Sources */,
 				AD451ECE2AEAF17E003130C9 /* DefaultHomeOnlineRepository.swift in Sources */,
 				AD451EDD2AEAF979003130C9 /* HomeViewState.swift in Sources */,
 				AD451E952AEAA53E003130C9 /* HomeViewModel.swift in Sources */,
+				AD21A2902AEEDCE700420125 /* UserManager.swift in Sources */,
 				AD451E9A2AEAA82F003130C9 /* UINavigationController+Extension.swift in Sources */,
+				AD21A27D2AEE989D00420125 /* DefaultSearchOnlineRepository.swift in Sources */,
 				AD451E9E2AEAB11F003130C9 /* HomeDetailView.swift in Sources */,
 				AD451ECC2AEAF100003130C9 /* HomeAppRepository.swift in Sources */,
 				AD451E292AE9ACB7003130C9 /* SceneDelegate.swift in Sources */,
@@ -654,7 +842,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD451E2D2AE9ACB7003130C9 /* Base */,
-				AD451EA52AEADDE8003130C9 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -663,7 +850,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD451E322AE9ACB7003130C9 /* Base */,
-				AD451EA62AEADDE8003130C9 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -672,7 +858,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD451EAA2AEADE98003130C9 /* en */,
-				AD451EAC2AEADE99003130C9 /* tr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1132,6 +1317,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AD0B769A2AEC313A00B9412D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
 		AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
@@ -1151,6 +1344,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AD0B769B2AEC313A00B9412D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD0B769A2AEC313A00B9412D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		AD451E7A2AEAA1B6003130C9 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */;
