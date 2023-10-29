@@ -71,6 +71,12 @@ final class HomeViewModel: ObservableObject, HomeViewModelProtocol {
         requestWeatherData(with: currentUnitType)
     }
     
+    func getmYlocation() {
+        selectedCity = nil
+        cityName = nil
+        locationPermission.getMylocation()
+    }
+    
     func requestWeatherData(with unit: HomeUnitTypes) {
         viewState = .loading
         if let selectedCity = selectedCity {

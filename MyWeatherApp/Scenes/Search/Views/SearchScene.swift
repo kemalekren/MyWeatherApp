@@ -64,7 +64,7 @@ struct SearchScene: View {
                     } label: {
                         Image(systemName: "chevron.left")
                             .renderingMode(.template)
-                            .foregroundColor(.black)
+                            .foregroundColor(Asset.Colors.searchTextColor.swiftUIColor)
                             .frame(side: 24)
                     }
                 }

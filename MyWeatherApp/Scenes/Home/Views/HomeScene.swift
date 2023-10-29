@@ -84,15 +84,23 @@ private extension HomeScene {
         HStack(alignment: .center, spacing: 10) {
             Menu {
                 Button {
+                    viewModel.getmYlocation()
+                }label: {
+                    Label("My Location", image: "")
+                }
+                
+                Button {
                     viewModel.requestWeatherData(with: .fahrenheit)
                 }label: {
                     Label(L10n.HomeScreen.Settings.Fahrenheit.title, image: Asset.Images.Home.fahrenheitIcon.name)
+                        .tint(Asset.Colors.searchTextColor.swiftUIColor)
                 }
                 
                 Button {
                     viewModel.requestWeatherData(with: .metric)
                 }label: {
                     Label(L10n.HomeScreen.Settings.Celsius.title, image: Asset.Images.Home.celsiusIcon.name)
+                        .tint(Asset.Colors.searchTextColor.swiftUIColor)
                     
                 }
             } label: {

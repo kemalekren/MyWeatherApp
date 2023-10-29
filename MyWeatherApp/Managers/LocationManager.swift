@@ -16,6 +16,7 @@ protocol LocationManager {
     var authorizationStatus: CLAuthorizationStatus { get }
     var locationPublisher: AnyPublisher<CLLocationCoordinate2D, Never> { get }
     func requestLocationPermission()
+    func getMylocation()
 }
 
 class LocationPermission: NSObject, ObservableObject, LocationManager, CLLocationManagerDelegate {
@@ -40,6 +41,9 @@ class LocationPermission: NSObject, ObservableObject, LocationManager, CLLocatio
         locationManager.requestWhenInUseAuthorization()
     }
 
+    func getMylocation() {
+        locationManager.requestLocation()
+    }
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         authorizationStatus = manager.authorizationStatus
     }
@@ -57,4 +61,9 @@ class LocationPermission: NSObject, ObservableObject, LocationManager, CLLocatio
             }
         }
     }
+    
+        func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+            // Handle the error here
+//            locationSubject.send(completion: .failure(error))
+        }
 }
