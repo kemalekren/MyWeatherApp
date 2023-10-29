@@ -22,9 +22,28 @@ enum IntegrationContainer: ContainerBuilder {
                 )
             )
         }.inObjectScope(.container)
+        
+        container.register(SearchAppRepositoryProtocol.self) {
+            SearchAppRepository(
+                repository: DefaultSearchOnlineRepository(
+                    requestPerformer: $0.resolve(RequestPerformer.self)!
+                )
+            )
+        }.inObjectScope(.container)
     }
     
     private static func buildIntegration(container: Container) {
+        container.register(LocationManager.self) { _ in
+            LocationPermission()
+        }
+        
+        container.register(DebounceManagerProcotol.self) { _ in
+            DebounceManager()
+        }
+        
+        container.register(UserManager.self) { _ in
+            DefaultUserManager()
+        }.inObjectScope(.container)
         
         container.register(NetworkURLManager.self) { _
             in DefaultNetworkURLManager()

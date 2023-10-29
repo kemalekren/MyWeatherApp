@@ -17,5 +17,9 @@ enum CommonContainer: ContainerBuilder {
         container.register(DefaultHomeSceneBuilder.self) { _ in
             DefaultHomeSceneBuilder(container: container)
         }
+        
+        container.register(DefaultSearchSceneBuilder.self) { _ in
+            DefaultSearchSceneBuilder(container: container)
+        }
     }
 }
