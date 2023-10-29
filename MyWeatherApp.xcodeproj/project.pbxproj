@@ -29,6 +29,7 @@
 		AD21A2962AEEE05B00420125 /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2952AEEE05B00420125 /* Publisher+Extensions.swift */; };
 		AD21A2982AEEE62C00420125 /* Double+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2972AEEE62C00420125 /* Double+Extenstion.swift */; };
 		AD21A29A2AEEE6E000420125 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD21A2992AEEE6E000420125 /* Int+Extension.swift */; };
+		AD29CBD62AEF086200F22517 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = AD29CBD52AEF086200F22517 /* Swinject */; };
 		AD451E272AE9ACB7003130C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E262AE9ACB7003130C9 /* AppDelegate.swift */; };
 		AD451E332AE9ACB7003130C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD451E312AE9ACB7003130C9 /* LaunchScreen.storyboard */; };
 		AD451E3E2AE9ACB8003130C9 /* MyWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E3D2AE9ACB8003130C9 /* MyWeatherAppTests.swift */; };
@@ -39,8 +40,6 @@
 		AD451E732AEA9F98003130C9 /* CustomHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E722AEA9F98003130C9 /* CustomHostingController.swift */; };
 		AD451E752AEAA099003130C9 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E742AEAA099003130C9 /* HomeCoordinator.swift */; };
 		AD451E782AEAA11F003130C9 /* ViewControllerRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E772AEAA11F003130C9 /* ViewControllerRoutes.swift */; };
-		AD451E7B2AEAA1B6003130C9 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = AD451E7A2AEAA1B6003130C9 /* Swinject */; };
-		AD451E7D2AEAA1B6003130C9 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AD451E7C2AEAA1B6003130C9 /* Swinject-Dynamic */; };
 		AD451E802AEAA2AC003130C9 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E7F2AEAA2AC003130C9 /* AppContainer.swift */; };
 		AD451E842AEAA327003130C9 /* CommonContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E832AEAA327003130C9 /* CommonContainer.swift */; };
 		AD451E8C2AEAA407003130C9 /* HomeVCBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD451E8B2AEAA407003130C9 /* HomeVCBuilder.swift */; };
@@ -93,6 +92,19 @@
 			remoteInfo = MyWeatherApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD29CBD32AEF082F00F22517 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AD0B76982AEC0B3500B9412D /* HomeWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeatherModel.swift; sourceTree = "<group>"; };
@@ -173,10 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0B769C2AEC313A00B9412D /* Kingfisher in Frameworks */,
-				AD451E7B2AEAA1B6003130C9 /* Swinject in Frameworks */,
+				AD29CBD62AEF086200F22517 /* Swinject in Frameworks */,
 				AD451EBD2AEAE06E003130C9 /* ReactiveNgNetworkModule in Frameworks */,
 				AD451EBB2AEAE06E003130C9 /* NgNetworkModuleCore in Frameworks */,
-				AD451E7D2AEAA1B6003130C9 /* Swinject-Dynamic in Frameworks */,
 				AD451EB92AEAE06E003130C9 /* ConcurrentNgNetworkModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +607,7 @@
 				AD451E1F2AE9ACB7003130C9 /* Sources */,
 				AD451E202AE9ACB7003130C9 /* Frameworks */,
 				AD451E212AE9ACB7003130C9 /* Resources */,
+				AD29CBD32AEF082F00F22517 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -603,12 +615,11 @@
 			);
 			name = MyWeatherApp;
 			packageProductDependencies = (
-				AD451E7A2AEAA1B6003130C9 /* Swinject */,
-				AD451E7C2AEAA1B6003130C9 /* Swinject-Dynamic */,
 				AD451EB82AEAE06E003130C9 /* ConcurrentNgNetworkModule */,
 				AD451EBA2AEAE06E003130C9 /* NgNetworkModuleCore */,
 				AD451EBC2AEAE06E003130C9 /* ReactiveNgNetworkModule */,
 				AD0B769B2AEC313A00B9412D /* Kingfisher */,
+				AD29CBD52AEF086200F22517 /* Swinject */,
 			);
 			productName = MyWeatherApp;
 			productReference = AD451E232AE9ACB7003130C9 /* MyWeatherApp.app */;
@@ -683,9 +694,9 @@
 			);
 			mainGroup = AD451E1A2AE9ACB7003130C9;
 			packageReferences = (
-				AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */,
 				AD451EB72AEAE06E003130C9 /* XCRemoteSwiftPackageReference "ng-ios-network-module" */,
 				AD0B769A2AEC313A00B9412D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AD29CBD42AEF086200F22517 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = AD451E242AE9ACB7003130C9 /* Products */;
 			projectDirPath = "";
@@ -919,7 +930,6 @@
 				INFOPLIST_FILE = MyWeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(IPHONEOS_DEPLOYMENT_TARGET)";
@@ -1054,7 +1064,6 @@
 				INFOPLIST_FILE = MyWeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(IPHONEOS_DEPLOYMENT_TARGET)";
@@ -1190,7 +1199,6 @@
 				INFOPLIST_FILE = MyWeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = "$(IPHONEOS_DEPLOYMENT_TARGET)";
@@ -1301,7 +1309,7 @@
 				minimumVersion = 7.9.1;
 			};
 		};
-		AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+		AD29CBD42AEF086200F22517 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
 			requirement = {
@@ -1325,15 +1333,10 @@
 			package = AD0B769A2AEC313A00B9412D /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		AD451E7A2AEAA1B6003130C9 /* Swinject */ = {
+		AD29CBD52AEF086200F22517 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */;
+			package = AD29CBD42AEF086200F22517 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
-		};
-		AD451E7C2AEAA1B6003130C9 /* Swinject-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AD451E792AEAA1B6003130C9 /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = "Swinject-Dynamic";
 		};
 		AD451EB82AEAE06E003130C9 /* ConcurrentNgNetworkModule */ = {
 			isa = XCSwiftPackageProductDependency;

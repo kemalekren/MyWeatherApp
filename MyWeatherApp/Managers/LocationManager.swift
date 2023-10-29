@@ -25,6 +25,7 @@ class LocationPermission: NSObject, ObservableObject, LocationManager, CLLocatio
     private let locationManager = CLLocationManager()
     private let locationSubject = PassthroughSubject<CLLocationCoordinate2D, Never>()
     private var previousLocation: CLLocation?
+    private var myLocationRequested: Bool = false
 
     var locationPublisher: AnyPublisher<CLLocationCoordinate2D, Never> {
         return locationSubject.eraseToAnyPublisher()
@@ -42,6 +43,7 @@ class LocationPermission: NSObject, ObservableObject, LocationManager, CLLocatio
     }
 
     func getMylocation() {
+        myLocationRequested = true
         locationManager.requestLocation()
     }
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
@@ -50,8 +52,10 @@ class LocationPermission: NSObject, ObservableObject, LocationManager, CLLocatio
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
-        if previousLocation == nil {
+        if previousLocation == nil || myLocationRequested {
+            previousLocation = location
             coordinates = location.coordinate
+            myLocationRequested = false
             locationSubject.send(location.coordinate)
         } else {
             let distance = location.distance(from: previousLocation!)
