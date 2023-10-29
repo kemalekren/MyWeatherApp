@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeDetailView: View {
+    var homeDetailModel: HomeWeatherDetailModel
+    
     let columnSizes: [GridItem] = [
            GridItem(.flexible(), spacing: 0)
        ]
@@ -16,27 +18,29 @@ struct HomeDetailView: View {
         GeometryReader { proxy in
             LazyVGrid(columns: columnSizes, spacing: 0) {
                 Section("") {
-                    createWindView()
+                    createWindView(imageURL: "", 
+                                   speed: homeDetailModel.windSpeed, 
+                                   gust: homeDetailModel.windGust,
+                                   degree: homeDetailModel.windDegree
+                    )
                 }
                 Section("") {
                     HStack(alignment: .center, spacing: 0) {
-                        createOneValueField()
+                        createOneValueField(temprature: "\(homeDetailModel.feelsLike)", title: "Feels Like")
 
-                        createOneValueField()
+                        createOneValueField(temprature: "\(homeDetailModel.humidity)", title: "Humidity")
                     }
                 }
                 Section("") {
                     HStack(alignment: .center, spacing: 0) {
-                        createOneValueField()
+                        createOneValueField(temprature: homeDetailModel.pressure, title: "Pressure")
 
-                        createOneValueField()
+                        createOneValueField(temprature: homeDetailModel.visibility, title: "Visibility", isDegree: false)
                     }
                 }
                 Section("") {
                     HStack(alignment: .center, spacing: 0) {
-                        sunView()
-
-                        createOneValueField()
+                        sunView(sunSet: homeDetailModel.sunSetTime, sunRise: homeDetailModel.sunRiseTime)
                     }
                 }
             }
@@ -46,7 +50,7 @@ struct HomeDetailView: View {
 
 private extension HomeDetailView {
     @ViewBuilder
-    func createWindView() -> some View {
+    func createWindView(imageURL: String, speed: String, gust: String?, degree: Double) -> some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack {
                 Image(systemName: "wind")
@@ -64,20 +68,22 @@ private extension HomeDetailView {
             
             HStack(alignment: .center, spacing: 10) {
                 VStack(alignment: .leading, spacing: 0) {
-                    Text("0.62 m/s")
+                    Text("\(speed) m/s")
                         .frame(height: 40)
                         .padding(.top, 16)
                         .foregroundStyle(.white)
                     Divider()
                         .frame(height: 1)
                         .background(.white)
-                    Text("1.18 m/s")
-                        .frame(height: 40)
-                        .padding(.bottom, 16)
-                        .foregroundStyle(.white)
+                    if let gust = gust {
+                        Text("\(gust) m/s")
+                            .frame(height: 40)
+                            .padding(.bottom, 16)
+                            .foregroundStyle(.white)
+                    }
                 }
                 
-              CircleView()
+                CircleView(degree: degree)
                     .frame(width: 100, height: 100)
             }
             .padding(.horizontal, 16)
@@ -90,7 +96,7 @@ private extension HomeDetailView {
     }
     
     @ViewBuilder
-    func createOneValueField() -> some View {
+    func createOneValueField(temprature: String, title: String, isDegree: Bool = true) -> some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack(alignment: .center, spacing: 5) {
                 Image(systemName: "thermometer.medium")
@@ -98,7 +104,7 @@ private extension HomeDetailView {
                     .scaledToFit()
                     .frame(width: 15, height: 15)
                     .foregroundStyle(.white)
-                Text("Feels Like")
+                Text(title)
                     .font(.body)
                     .foregroundStyle(.white)
             }
@@ -106,11 +112,20 @@ private extension HomeDetailView {
             .padding(.top, 16)
             .padding(.horizontal, 16)
             
-            Text("11°")
-                .font(.largeTitle)
-                .padding(.vertical, 16)
-                .padding(.horizontal, 16)
-                .foregroundStyle(.white)
+            if isDegree {
+                Text("\(temprature)°")
+                    .font(.largeTitle)
+                    .padding(.vertical, 16)
+                    .padding(.horizontal, 16)
+                    .foregroundStyle(.white)
+            } else {
+                Text("\(temprature) km")
+                    .font(.largeTitle)
+                    .padding(.vertical, 16)
+                    .padding(.horizontal, 16)
+                    .foregroundStyle(.white)
+            }
+           
             Spacer()
         }
         .frame(height: 100)
@@ -120,7 +135,7 @@ private extension HomeDetailView {
     }
     
     @ViewBuilder
-    func sunView() -> some View {
+    func sunView(sunSet: String, sunRise: String) -> some View {
         VStack(alignment: .leading, spacing: 5) {
             
             HStack(alignment: .center, spacing: 0) {
@@ -131,7 +146,7 @@ private extension HomeDetailView {
                         .frame(height: 20)
                         .foregroundStyle(.white)
                     
-                    Text("9:00")
+                    Text(sunRise)
                         .font(.body)
                         .foregroundStyle(.white)
                 }
@@ -146,7 +161,7 @@ private extension HomeDetailView {
                         .frame(height: 20)
                         .foregroundStyle(.white)
                     
-                    Text("19:00")
+                    Text(sunSet)
                         .font(.body)
                         .foregroundStyle(.white)
                 }
@@ -163,15 +178,16 @@ private extension HomeDetailView {
         .padding(.horizontal, 16)
     }
 }
-
-#Preview {
-    HomeDetailView()
-}
+//
+//#Preview {
+//    HomeDetailView()
+//}
 
 struct CircleView: View {
     let circleSize: CGFloat = 100
     let arrowSize: CGFloat = 20
     let arrowPadding: CGFloat = 10
+    var degree: Double = 0
     
     var body: some View {
         ZStack {
@@ -183,7 +199,7 @@ struct CircleView: View {
                 .resizable()
                 .frame(width: arrowSize, height: arrowSize)
                 .position(x: circleSize / 2, y: circleSize / 2)
-                .rotationEffect(.degrees(23), anchor: .center)
+                .rotationEffect(.degrees(degree), anchor: .center)
                 .foregroundStyle(.white)
             
             Text("N")

@@ -9,26 +9,136 @@ import SwiftUI
 
 struct HomeScene: View {
     @StateObject var viewModel: HomeViewModel
+    
     var body: some View {
-        ZStack {
+        ZStack(alignment: .center) {
             LinearGradient(colors: [Color("customBlue"), Color("lightblue")], startPoint: .leading, endPoint: .trailing)
                 .ignoresSafeArea()
-            VStack {
-                ScrollView {
-                    VStack {
-                        HomeHeaderView()
-                            .padding(.top, 16)
-                        
-                        HomeDetailView()
+            
+            if isLoading {
+                LoadingView()
+            } else {
+                
+                VStack(alignment: .center, spacing: 10) {
+                    header()
+                    
+                    Spacer()
+                    
+                    if let error = isErrorLoaded, !error.isEmpty {
+                        ErrorView(errorMessage: error)
+                            .frame(height: 100)
+                            .padding(.horizontal, 16)
                         Spacer()
+                    } else {
+                        ScrollView {
+                            VStack {
+                                if let weatherData = weatherData {
+                                    HomeHeaderView(headerModel: weatherData.weather)
+                                        .padding(.top, 16)
+                                    
+                                    HomeDetailView(homeDetailModel: weatherData.weatherDetails)
+                                    Spacer()
+                                }
+                            }
+                            
+                        }
+                        Spacer()
+                       
+                            if let weatherData = weatherData {
+                                HStack(alignment: .center) {
+                                Text("Updated time: \(weatherData.weather.updatedTime)")
+                                    .foregroundStyle(.white)
+                                Button {
+                                    viewModel.viewState = .loading
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                        viewModel.requestWeatherData(with: viewModel.currentUnitType)
+                                    }
+                                    
+                                } label: {
+                                    Image(systemName: "arrow.clockwise")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(side: 20)
+                                        .foregroundStyle(.white)
+                                }
+                            }
+                                .frame(height: 20)
+                                .frame(maxWidth: .infinity, alignment: .center)
+                        }
+                   
+                        
                     }
+                }
+            }
+                
+        }
+        .onAppear {
+            viewModel.requestLocationPermission()
+        }
+    }
+}
+
+private extension HomeScene {
+    @ViewBuilder
+    func header() -> some View {
+        HStack(alignment: .center, spacing: 10) {
+            Menu {
+                Button {
+                    viewModel.requestWeatherData(with: .fahrenheit)
+                }label: {
+                    Label(L10n.HomeScreen.Settings.Fahrenheit.title, image: Asset.Images.Home.fahrenheitIcon.name)
+                }
+                
+                Button {
+                    viewModel.requestWeatherData(with: .metric)
+                }label: {
+                    Label(L10n.HomeScreen.Settings.Celsius.title, image: Asset.Images.Home.celsiusIcon.name)
                     
                 }
-                Spacer()
-                Text("Updated time: 10.20.2023 23:33")
+            } label: {
+                Image(systemName: "gear")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(side: 20)
+                    .foregroundStyle(.white)
+            }
+            
+            Spacer()
+            
+            Button {
+                viewModel.navigate(to: .search)
+            } label: {
+                Image(systemName: "magnifyingglass")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(side: 20)
                     .foregroundStyle(.white)
             }
         }
+        .padding(.horizontal, 16)
+    }
+}
+
+private extension HomeScene {
+    var weatherData: HomeWeatherMainModel? {
+        switch viewModel.viewState {
+        case .loaded(let model):
+            return model
+        default:
+            return nil
+        }
+    }
+    
+    var isLoading: Bool {
+        return viewModel.viewState == .loading
+    }
+    
+    var isErrorLoaded: String? {
+        if case let .error(error) = viewModel.viewState {
+            return error.localizedDescription
+        }
+        
+        return nil
     }
 }
 

@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct HomeHeaderView: View {
+    var headerModel: HomeWeatherModel
+    
     var body: some View {
         ZStack {
             VStack(alignment: .center, spacing: 0) {
-                Text("Poznan")
+                Text(headerModel.cityName)
                     .font(.title.bold())
                     .padding(.top, 16)
                     .foregroundStyle(.white)
@@ -23,24 +25,24 @@ struct HomeHeaderView: View {
                         .frame(width: 25, height: 25)
                         .foregroundStyle(.white)
                     
-                    Text("16")
+                    Text("\(headerModel.temprature) °")
                         .padding(.horizontal, 16)
                         .font(.title2)
                         .foregroundStyle(.white)
                     
                     VStack(alignment: .leading, spacing: 2) {
-                        Text("H: 20")
+                        Text("H: \(headerModel.maxTemprature) °")
                             .padding(.horizontal, 16)
                             .font(.callout)
                             .foregroundStyle(.white)
-                        Text("L: 10")
+                        Text("L: \(headerModel.minTemprature) °")
                             .padding(.horizontal, 16)
                             .font(.callout)
                             .foregroundStyle(.white)
                     }
                 }
                 
-                Text("Partially Cloudy")
+                Text(headerModel.weatherDescription)
                     .padding(.horizontal, 16)
                     .padding(.bottom, 16)
                     .foregroundStyle(.white)
@@ -54,6 +56,8 @@ struct HomeHeaderView: View {
     }
 }
 
-#Preview {
-    HomeHeaderView()
-}
+
+
+//#Preview {
+//    HomeHeaderView()
+//}

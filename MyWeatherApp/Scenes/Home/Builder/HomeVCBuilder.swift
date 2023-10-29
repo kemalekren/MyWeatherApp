@@ -24,8 +24,14 @@ final class DefaultHomeSceneBuilder: BaseBuilder, HomeSceneBuilder {
         /// Home Repository
         let repository = container.resolve(HomeAppRepositoryProtocol.self)!
         
+        /// Location Manager
+        let locationManager = container.resolve(LocationManager.self)!
+        
+        /// User Manager
+        let userManager = container.resolve(UserManager.self)!
+        
         /// Home Scene View Model
-        let viewModel = HomeViewModel(repository: repository)
+        let viewModel = HomeViewModel(repository: repository,locationManager: locationManager, userManager: userManager )
         
         /// Home Scene Main Scene
         let view = HomeScene(viewModel: viewModel)
