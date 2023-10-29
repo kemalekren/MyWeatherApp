@@ -14,19 +14,27 @@ struct HomeResultModel: Codable {
      let wind: Wind
      let updatedTime: Int
      let dayDetails: DayDetails
-     let name: String
+     let cityName: String
     
     private enum CodingKeys: String, CodingKey {
-        case weather,visibility,wind, name
+        case weather,visibility,wind
         case weatherDetails = "main"
         case updatedTime = "dt"
         case dayDetails = "sys"
+        case cityName = "name"
     }
 }
 
 struct Weather: Codable {
     let id: Int
-    let main, description, icon: String
+    let weatherType, weatherDetail, weatherIconURL: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case weatherType = "main"
+        case weatherDetail = "description"
+        case weatherIconURL = "icon"
+    }
 }
 
 struct WeatherDetails: Codable {

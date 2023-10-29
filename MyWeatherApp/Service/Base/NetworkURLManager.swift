@@ -25,11 +25,11 @@ final class DefaultNetworkURLManager: NetworkURLManager {
         let token = ProcessInfo.processInfo.environment["API_KEY"] ?? ""
         switch AppScheme.current {
         case .development:
-            return "api.openweathermap.org/data/2.5/"
+            return "api.openweathermap.org/"
         case .staging:
-            return "api.openweathermap.org/data/2.5/"
+            return "api.openweathermap.org"
         case .production:
-            return "api.openweathermap.org/data/2.5/"
+            return "api.openweathermap.org"
         }
     }
 }

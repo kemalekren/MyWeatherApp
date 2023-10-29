@@ -8,9 +8,7 @@
 import Foundation
 
 final class TokenManager {
-    static var shared = TokenManager()
-    
-    var token: String {
+    static var token: String {
         if let token = ProcessInfo.processInfo.environment["API_KEY"] {
             return token
         }

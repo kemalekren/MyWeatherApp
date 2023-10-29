@@ -1,21 +1,19 @@
 //
-//  HomeRequestModel.swift
+//  SearchRequestModel.swift
 //  MyWeatherApp
 //
-//  Created by Esat Kemal Ekren on 26/10/2023.
+//  Created by Esat Kemal Ekren on 29/10/2023.
 //
 
 import Foundation
 
-struct HomeRequestModel: Codable {
-    let lat: String?
-    let lon: String?
+struct SearchRequestModel: Codable {
     let cityName: String?
-    let units: String?
+    let limit: String
     let token = TokenManager.token
     
     private enum CodingKeys: String, CodingKey {
-        case lat,lon, units
+        case limit
         case cityName = "q"
         case token = "APPID"
     }
