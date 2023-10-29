@@ -21,7 +21,7 @@ final class HomeCoordinator: NSObject, Coordinator {
     let container: Container
     
     // MARK: Initializer
-
+    
     /// An OnboardingCoordinator's default initializer.
     ///
     /// - Parameters:
@@ -45,11 +45,26 @@ private extension HomeCoordinator {
         homeSceneRoutes.navigationEventHandler = { [weak self] route in
             switch route {
             case .search:
-                // TODO: Navigtate to Search Scene
-                break
+                self?.startSearchSceneFlow()
             }
         }
         rootViewController?.setViewControllers([homeSceneRoutes], animated: true)
+    }
+    
+    func startSearchSceneFlow() {
+        let searchSceneRoutes = container.searchRoutes
+        
+        searchSceneRoutes.navigationEventHandler = { [weak self] route in
+            switch route {
+            case .back, .select:
+                self?.backToPreviousScene()
+            }
+        }
+        rootViewController?.pushViewController(searchSceneRoutes, animated: true)
+    }
+    
+    func backToPreviousScene() {
+        rootViewController?.popViewController(animated: true)
     }
 }
 
@@ -58,5 +73,9 @@ private extension HomeCoordinator {
 private extension Container {
     var homeRoutes: HomeSceneRoutes {
         resolve(DefaultHomeSceneBuilder.self)!.create()
+    }
+    
+    var searchRoutes: SearchSceneRoutes {
+        resolve(DefaultSearchSceneBuilder.self)!.create()
     }
 }
