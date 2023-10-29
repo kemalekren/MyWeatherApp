@@ -46,9 +46,9 @@ extension HomeWeatherModel {
             self.weatherIconURL = "No Data"
         }
         self.updatedTime = response.updatedTime.toReadableDate()
-        self.temprature = response.weatherDetails.temp.formattedString
-        self.minTemprature = response.weatherDetails.tempMin.formattedString
-        self.maxTemprature = response.weatherDetails.tempMax.formattedString
+        self.temprature = response.weatherDetails.temp.toStringWithoutDecimal
+        self.minTemprature = response.weatherDetails.tempMin.toStringWithoutDecimal
+        self.maxTemprature = response.weatherDetails.tempMax.toStringWithoutDecimal
         if let cityName = cityName, !cityName.isEmpty {
             self.cityName = cityName
         } else {
@@ -77,7 +77,7 @@ extension HomeWeatherDetailModel {
         self.windGust = response.wind.gust?.formattedString
         self.sunRiseTime = response.dayDetails.sunrise.toReadableTime()
         self.sunSetTime = response.dayDetails.sunset.toReadableTime()
-        self.feelsLike = response.weatherDetails.feelsLike.formattedString
+        self.feelsLike = response.weatherDetails.feelsLike.toStringWithoutDecimal
         self.pressure = response.weatherDetails.pressure.toString
         self.humidity = response.weatherDetails.humidity.toString
         self.visibility = response.visibility.toShortString

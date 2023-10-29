@@ -30,7 +30,7 @@ struct SearchScene: View {
                                             HStack {
                                                 Text(model.name)
                                                     .font(.callout)
-                                                    .foregroundStyle(.black)
+                                                    .foregroundStyle(Asset.Colors.searchTextColor.swiftUIColor)
                                                     .frame(height: 40)
                                                     .padding(.horizontal, 16)
                                                 Spacer()

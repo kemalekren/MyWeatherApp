@@ -11,5 +11,9 @@ extension Double {
     var formattedString: String {
             return String(format: "%.2f", self)
         }
+    
+    var toStringWithoutDecimal: String {
+          return String(Int(self))
+      }
 
 }

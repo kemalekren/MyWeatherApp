@@ -7,6 +7,21 @@
 
 import SwiftUI
 
+private enum HomeDetailViewType {
+    case degree, km, pressure
+    
+    var image: Image {
+        switch self {
+        case .degree:
+            return Image(systemName: "thermometer.medium")
+        case .km:
+            return Image(systemName: "eye.fill")
+        case .pressure:
+            return Image(systemName: "gauge")
+        }
+    }
+}
+
 struct HomeDetailView: View {
     var homeDetailModel: HomeWeatherDetailModel
     
@@ -33,9 +48,9 @@ struct HomeDetailView: View {
                 }
                 Section("") {
                     HStack(alignment: .center, spacing: 0) {
-                        createOneValueField(temprature: homeDetailModel.pressure, title: "Pressure")
+                        createOneValueField(temprature: homeDetailModel.pressure, title: "Pressure", type: .pressure)
 
-                        createOneValueField(temprature: homeDetailModel.visibility, title: "Visibility", isDegree: false)
+                        createOneValueField(temprature: homeDetailModel.visibility, title: "Visibility", type: .km)
                     }
                 }
                 Section("") {
@@ -92,14 +107,22 @@ private extension HomeDetailView {
         .frame(height: 150)
         .background(Color.white.opacity(0.3))
         .cornerRadius(20)
-        .padding(.horizontal, 16)
+        .padding(.horizontal, 8)
     }
     
     @ViewBuilder
-    func createOneValueField(temprature: String, title: String, isDegree: Bool = true) -> some View {
+    func createOneValueField(temprature: String, title: String, type: HomeDetailViewType = .degree) -> some View {
+        let measurementText: String = {
+            switch type {
+            case .degree: return "\(temprature)°"
+            case .km: return "\(temprature) km"
+            case .pressure: return "\(temprature) hPa"
+            }
+        }()
+        
         VStack(alignment: .leading, spacing: 0) {
             HStack(alignment: .center, spacing: 5) {
-                Image(systemName: "thermometer.medium")
+                type.image
                     .resizable()
                     .scaledToFit()
                     .frame(width: 15, height: 15)
@@ -112,26 +135,19 @@ private extension HomeDetailView {
             .padding(.top, 16)
             .padding(.horizontal, 16)
             
-            if isDegree {
-                Text("\(temprature)°")
-                    .font(.largeTitle)
-                    .padding(.vertical, 16)
-                    .padding(.horizontal, 16)
-                    .foregroundStyle(.white)
-            } else {
-                Text("\(temprature) km")
-                    .font(.largeTitle)
-                    .padding(.vertical, 16)
-                    .padding(.horizontal, 16)
-                    .foregroundStyle(.white)
-            }
-           
+            Text(measurementText)
+                .font(.largeTitle)
+                .padding(.vertical, 16)
+                .padding(.horizontal, 16)
+                .foregroundStyle(.white)
+            
             Spacer()
         }
         .frame(height: 100)
         .background(.white.opacity(0.3))
         .cornerRadius(20)
-        .padding(.horizontal, 16)
+        .padding(.horizontal, 8)
+        
     }
     
     @ViewBuilder
@@ -175,9 +191,10 @@ private extension HomeDetailView {
         .frame(height: 100)
         .background(.white.opacity(0.3))
         .cornerRadius(20)
-        .padding(.horizontal, 16)
+        .padding(.horizontal, 8)
     }
 }
+
 //
 //#Preview {
 //    HomeDetailView()

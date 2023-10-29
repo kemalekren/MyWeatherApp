@@ -6,6 +6,11 @@
 //
 
 import SwiftUI
+import Kingfisher
+
+fileprivate enum HomeHeaderViewConstant {
+    static let imageBaseURL = "https://openweathermap.org/img/wn/"
+}
 
 struct HomeHeaderView: View {
     var headerModel: HomeWeatherModel
@@ -19,10 +24,10 @@ struct HomeHeaderView: View {
                     .foregroundStyle(.white)
                 
                 HStack(alignment: .center, spacing: 5) {
-                    Image(systemName: "cloud")
+                    KFImage(imageURL)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 25, height: 25)
+                        .frame(width: 50, height: 50)
                         .foregroundStyle(.white)
                     
                     Text("\(headerModel.temprature) °")
@@ -50,9 +55,16 @@ struct HomeHeaderView: View {
             .frame(maxWidth: .infinity)
             .background(Color.white.opacity(0.3))
             .cornerRadius(20, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-            .padding(.horizontal, 16)
+            .padding(.horizontal, 8)
             
         }
+    }
+}
+
+private extension HomeHeaderView {
+    var imageURL: URL? {
+        let url = "\(HomeHeaderViewConstant.imageBaseURL)\(headerModel.weatherIconURL)@2x.png"
+        return URL(string: url)
     }
 }
 

@@ -12,7 +12,7 @@ struct HomeScene: View {
     
     var body: some View {
         ZStack(alignment: .center) {
-            LinearGradient(colors: [Color("customBlue"), Color("lightblue")], startPoint: .leading, endPoint: .trailing)
+            LinearGradient(colors: [Asset.Colors.homeDarkBlue.swiftUIColor, Asset.Colors.homeLightBlue.swiftUIColor], startPoint: .leading, endPoint: .trailing)
                 .ignoresSafeArea()
             
             if isLoading {
