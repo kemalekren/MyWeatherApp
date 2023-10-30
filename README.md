@@ -29,7 +29,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * **Kingfisher**: For efficient image downloading and caching.
 * **SwiftGen**: For generating type-safe Swift code for your assets and resources.
 * **Swinject**: For DI Management
-* **NGNetworkModule**: A networking module for handling network requests efficiently.
+* **NGNetworkModule**: A networking module for handling network requests efficiently. I'm one of the main contributors to NGNetworkModule.
 * **Snapshottesting**: Used for capturing and verifying view snapshots in tests.
 * **OpenWeatherMap** API: For fetching current weather data and geocoding services for custom location search.
 <!-- GETTING STARTED -->
