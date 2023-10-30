@@ -17,7 +17,6 @@ final class HomeViewSnapshotTests: XCTestCase {
         let view = HomeDetailView(homeDetailModel: PreviewMocks.mockHomeWeatherDetailModel)
         let vc = UIHostingController(rootView: view)
         vc.view.frame = UIScreen.main.bounds
-        
         // then:
         assertSnapshot(matching: vc, as: .image)
     }
@@ -27,7 +26,6 @@ final class HomeViewSnapshotTests: XCTestCase {
         let view = HomeHeaderView(headerModel: PreviewMocks.mockHomeWeatherModel)
         let vc = UIHostingController(rootView: view)
         vc.view.frame = UIScreen.main.bounds
-        
         // then:
         assertSnapshot(matching: vc, as: .image)
     }
@@ -47,7 +45,6 @@ final class HomeViewSnapshotTests: XCTestCase {
         let view = HomeScene(viewModel: viewModel)
         let vc = UIHostingController(rootView: view)
         vc.view.frame = UIScreen.main.bounds
-        
         // then:
         assertSnapshot(matching: vc, as: .image)
     }
