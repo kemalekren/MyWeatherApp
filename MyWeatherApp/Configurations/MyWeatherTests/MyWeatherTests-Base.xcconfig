@@ -1,0 +1,4 @@
+PRODUCT_BUNDLE_IDENTIFIER = com.kemalekren.MyWeatherAppTests
+CODE_SIGN_IDENTITY = // Empty by default
+PROVISIONING_PROFILE_SPECIFIER = // Empty by default
+IPHONEOS_DEPLOYMENT_TARGET = 16.0
