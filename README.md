@@ -21,6 +21,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * **Testing-First Approach**: All view models, managers, and components are designed with testing in mind to ensure the app's reliability and stability.
 * **Snapshot Testing**: Snapshot tests are included to capture the app's UI in different states, helping maintain a consistent and appealing user interface.
 * **Multiple Build Targets**: Weatherly offers three build targets - Development, Staging, and Production - making it easy to manage different deployment environments.
+* Localization: My Weather App is designed and supports multiple languages, offering a seamless experience for users worldwide by providing localized content.
 
 
 ### Dependencies
