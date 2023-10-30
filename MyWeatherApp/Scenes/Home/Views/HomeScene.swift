@@ -48,11 +48,8 @@ struct HomeScene: View {
                                 HStack(alignment: .center) {
                                 Text("Updated time: \(weatherData.weather.updatedTime)")
                                     .foregroundStyle(.white)
-                                Button {
-                                    viewModel.viewState = .loading
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                        viewModel.requestWeatherData(with: viewModel.currentUnitType)
-                                    }
+                                Button { 
+                                    viewModel.requestWeatherData(with: viewModel.currentUnitType)
                                     
                                 } label: {
                                     Image(systemName: "arrow.clockwise")
